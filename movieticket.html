@@ -1,0 +1,34 @@
+<html>
+<head>
+<script language="javascript">
+var no_of_tickets;
+const ticket_cost=50;
+var total_cost;
+var discount
+
+no_of_tickets=parseInt(window.prompt("enter no of tickets","0"));
+
+if(no_of_tickets>=6)
+	alert("Booking is not possible");
+else if(no_of_tickets>=1 && no_of_tickets<=2)
+{
+	total_cost=ticket_cost*no_of_tickets;
+	document.write("total cost of tickets:"+total_cost);
+}
+else
+{
+	total_cost=ticket_cost*no_of_tickets;
+	document.write("<br>");
+	document.write("total cost before discount is:"+total_cost);
+	document.write("</br>");
+	discount=total_cost-(ticket_cost*0.05);
+	document.write("<br>");
+	document.write("total cost after discount:"+discount);
+	document.write("</br>");
+}
+   
+</script>
+</head>
+</html>
+	
+	
